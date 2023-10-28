@@ -1,6 +1,16 @@
-// Import stylesheets
-import './style.css';
+const buttons=document.querySelectorAll(".button")
+const body=document.querySelector("body")
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+
+buttons.forEach((button)=>{
+button.addEventListener("click",function(e){
+if(e.target.id=== "grey")
+body.style.backgroundColor=e.target.id
+if(e.target.id=== "green")
+body.style.backgroundColor=e.target.id
+if(e.target.id=== "blue")
+body.style.backgroundColor=e.target.id
+if(e.target.id=== "yellow")
+body.style.backgroundColor=e.target.id
+})
+})
